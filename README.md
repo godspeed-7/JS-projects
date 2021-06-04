@@ -1,4 +1,4 @@
 # JS-projects
 
 1 -> Stopwatch project
-2 -> Bad charcaters
+2 -> Bad characters
