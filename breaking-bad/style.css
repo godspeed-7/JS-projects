@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+img{
+    width: 100%;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.name {
+    position: absolute;
+    bottom: 0;
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: none;
+    transition: all 1s;
+}
+.item:hover .name{
+    /* transition: all 0.2s ease; */
+     display: block;
+}
