@@ -1,0 +1,15 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    margin-top: 20px !important;
+}
+.header::first-letter{
+    font-size: 70px;
+    color: red;
+}
+.error {
+    color: red;
+}
