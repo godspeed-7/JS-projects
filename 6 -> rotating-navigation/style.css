@@ -5,7 +5,7 @@
 }
 
 body {
-overflow-x: hidden;
+overflow: hidden;
 margin: 0;
 background-color: #333;
 color: #222;
@@ -26,6 +26,7 @@ padding: 50px;
     position: fixed;
     top: -100px;
     left: -100px;
+    transition: transform 0.5s linear;
 }
 .circle {
     background-color: #ff7979;
@@ -36,7 +37,7 @@ padding: 50px;
     transition: transform 0.5s linear;
 }
 
-.circle button {
+/* .circle button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,17 +47,26 @@ padding: 50px;
     font-size: 26px;
     color: #fff;
 
+} */
+.circle #close {
+    position: absolute;
+    top: -7%;
+    left: 16%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
 }
-.circle buton:focus {
-    outline: none;
-}
-.circle button#open {
-    left: 60%;
-}
-.circle button#close {
-    top: 60%;
-    transform: rotate(90deg);
-    transform-origin: top left;
+.circle #open {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
 }
 
 .content {
@@ -73,4 +83,11 @@ padding: 50px;
 }
 .content p {
     color: #333;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -90;
 }
