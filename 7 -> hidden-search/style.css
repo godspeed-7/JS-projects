@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+::placeholder {
+    color: white;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+body {
+overflow: hidden;
+margin: 0;
+background-color: #333;
+color: #222;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#7070ea;
+}
+.search {
+    border: none;
+    border-radius: 40px;
+    height: 75px;
+    display: flex;
+    transition: all 0.5s linear;
+}
+#myInput {
+    height: 100%;
+    border: 0;
+    outline: none;
+    color: white;
+    width: 0;
+    transition: all 0.5s linear;
+}
+#myButton {
+    height: 100% !important;
+    border-radius: 40px ;
+    width: 150px;
+    margin-left: 10px;
+}
+.additional {
+    width: 600px !important;
+    border: 2px solid #9b4dca !important;
+    border-radius: 40px !important;
+}
