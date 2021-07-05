@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: #333;
+  color: #222;
+  height: 100vh;
+  display: flex;
+}
+.left {
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.7s linear 0.2s;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+}
+.left:hover {
+  width: 70vw;
+}
+
+.right {
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.7s linear 0.2s;
+}
+
+.right:hover {
+  width: 70vw;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+}
+.product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.product h2 {
+  font-weight: 900;
+}
+.product button {
+  margin: 10px auto;
+}
