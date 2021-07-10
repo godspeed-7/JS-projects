@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(127, 106, 241);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 800px !important;
+  height: 200px !important;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.container h3 {
+  text-align: center;
+}
+
+.container button {
+  align-self: center;
+}
