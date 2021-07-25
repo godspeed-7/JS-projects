@@ -1,19 +1,27 @@
 const ball = document.querySelector('.ball');
-// let zero = 0;
-// window.onload  = function() {
-// ball.style.transform = `translate(${zero}px)`;
-// }
-
-//action
-
-const forward = document.querySelector('.forward');
-const backward = document.querySelector('.backward');
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+const up = document.querySelector('.up');
+const down = document.querySelector('.down');
+const center = document.querySelector('.center');
 
 
-forward.addEventListener('click', () => {
-    ball.style.transform = `translate(200px, 0px)`;
+left.addEventListener('click', () => {
+    ball.style.transform = `translate(-200px, 0px)`;
 });
 
-backward.addEventListener('click', () => {
+right.addEventListener('click', () => {
+    ball.style.transform = `translate(200px, 0px)`;
+})
+
+up.addEventListener('click', () => {
+    ball.style.transform = `translate(0px, -200px)`;
+})
+
+down.addEventListener('click', () => {
+    ball.style.transform = `translate(0px, 200px)`;
+});
+
+center.addEventListener('click', () => {
     ball.style.transform = `translate(0px, 0px)`;
 })
