@@ -30,9 +30,9 @@ h3 {
 .collapsible__content {
   margin-top: 10px;
   max-height: 0;
-  opacity: 0;
+  /* opacity: 0; */
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 0.9s ease-in-out;
 }
 .collapsible__header {
   display: flex;
@@ -46,6 +46,6 @@ h3 {
   transform: rotate(0deg);
 }
 .collapsible--expand .collapsible__content {
-  max-height: 100vh;
+  max-height: 100px;
   opacity: 1;
 }
