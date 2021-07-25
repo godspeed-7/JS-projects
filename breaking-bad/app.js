@@ -20,7 +20,6 @@ async function fetchBadCharacters() {
   ).then((data) => data.json());
   let badCharactersImages = badCharacters.map(character => ({img: character.img, name: character.name}));
   createElements(badCharactersImages);
-  console.log('badchars', badCharactersImages);
 }
 
 fetchBadCharacters();
