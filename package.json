@@ -1,0 +1,23 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "1 -> Stopwatch project 2 -> Bad characters 3 -> form with table 4 -> expanding cards 5-> progress-steps 6-> rotating navigation 7-> hidden search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godspeed-7/JS-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/godspeed-7/JS-projects/issues"
+  },
+  "homepage": "https://github.com/godspeed-7/JS-projects#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
