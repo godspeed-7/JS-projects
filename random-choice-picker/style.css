@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(90, 90, 251);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+textarea {
+  color: white;
+}
+
+.button {
+  border-radius: 15px;
+  background: rgb(139, 91, 3);
+  color: white;
+  padding: 10px 20px;
+}
