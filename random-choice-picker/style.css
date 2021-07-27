@@ -15,12 +15,26 @@ body {
   height: 100vh;
 }
 textarea {
-  color: white;
+  color: black;
+  margin: 0 auto;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
 .button {
   border-radius: 15px;
-  background: rgb(139, 91, 3);
+  background: #ef9c04;
   color: white;
   padding: 10px 20px;
+  border: none;
+  margin: 5px;
+}
+.chips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

@@ -9,6 +9,9 @@ chipscontainer.append(button);
 
 }
 textArea.addEventListener('input', (e)=> {
+    if(e.target.value === '') {
+        chipscontainer.innerHTML='';
+    }
     console.log(e);
     if(e.data === ',') {
 let data = e.target.value.split(',');
