@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  color: white;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icon {
+  color: white;
+  font-size: 32px !important;
+}
+.count {
+  font-size: 32px;
+  font-weight: 500;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 40px;
+}
