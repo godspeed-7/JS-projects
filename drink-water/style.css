@@ -9,6 +9,7 @@ body {
   margin: 0;
   background-color: #0bc0ee;
   color: white;
+  font-family: fantasy;
 }
 .parent {
   display: flex;
@@ -26,18 +27,24 @@ body {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   position: relative;
+  transition: all 0.5s;
 }
 .filled {
   position: absolute;
   bottom: 0;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  transition: all 0.5s;
 }
 .remaining {
   position: absolute;
-  bottom: 50%;
+  bottom: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.percent {
+  color: white;
 }
 .quantities {
   display: flex;
@@ -54,11 +61,23 @@ body {
 }
 .glass {
   height: 100px;
-  width: 50px;
+  width: 60px;
   background: white;
   color: black;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border: 1px solid black;
   cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s;
+}
+.glass:hover {
+  transform: perspective(400px) translateZ(50px);
+}
+.glass div {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
