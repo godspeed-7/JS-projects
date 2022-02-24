@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  /* background-color: #333; */
+  color: white;
+  padding: 20px;
+}
+.menu {
+  cursor: pointer;
+}
+.menu .title:before {
+  content: '➡️';
+}
+.menu ul {
+  display: none;
+}
+.menu.open ul {
+  display: block;
+}
+.menu.open .title:before {
+  content: '⬇️';
+}

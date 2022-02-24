@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- https://plnkr.co/edit/8dwHzsyytfPDr08F?p=preview&preview -->
 
 <head>
     <meta charset="UTF-8">
@@ -24,44 +25,37 @@
 <script>
     const container = document.querySelector('.container');
     const ball = document.querySelector('.ball');
+    // container position
+    const data = container.getBoundingClientRect();
+    console.log(data);
+
     container.addEventListener('click', (e) => {
-        console.log(container.getBoundingClientRect());
-        const { left, top, width, height } = container.getBoundingClientRect();
-        let _top = 0;
-        let _left = 0;
-        let pos = {
-            x: e.clientX,
-            y: e.clientY
-        }
-        if (pos.y < (top + 80)) {
-            _top = 0;
+        // ball position
 
+        let ballTop = 0;
+        let ballLeft = 0;
+        let ballfuture = {
+            top: e.clientY - data.top - ball.clientHeight / 2,
+            left: e.clientX - data.left - ball.clientWidth / 2,
         }
-        if (pos.x < (left + 80)) {
-            _left = 0;
-        }
-        // if ((left + 20) > pos.x) {
-        //     console.log(pos.x);
-        //     console.log(left);
-        //     ball.style.left = pos.x + 'px';
-        //     // ball.style.top = pos.y - top - 80 + 'px';
-        // }
-        if ((left + width) > pos.x) {
-            ball.style.left = pos.x - left - 80 + 'px';
-            ball.style.top = pos.y - top - 80 + 'px';
-        }
-        // if ( || (top + height) > pos.y) {
-        //     ball.style.left = pos.x - left - 80 + 'px';
-        //     ball.style.top = pos.y - top - 80 + 'px';
-        // }
+        ballTop = ballfuture.top;
+        ballLeft = ballfuture.left;
 
-        else {
-            // ball.style.left = pos.x - left + 'px';
-            // ball.style.top = pos.y - top + 'px';
-            console.log('here', _top, _left);
-            ball.style.left = _left + 'px';
-            ball.style.top = _top + 'px';
+        if (ballfuture.top < 0) {
+            ballTop = 0;
         }
+        if (ballfuture.left < 0) {
+            ballLeft = 0;
+        }
+        if ((ballfuture.left + ball.clientWidth) > data.width) {
+            ballLeft = container.clientWidth - ball.clientWidth;
+        }
+        if ((ballfuture.top + ball.clientHeight) > data.height) {
+            ballTop = container.clientHeight - ball.clientHeight;
+        }
+        ball.style.left = ballLeft + 'px';
+        ball.style.top = ballTop + 'px';
+        console.log(ballfuture);
 
     })
 
